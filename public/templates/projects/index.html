@@ -1,0 +1,27 @@
+<!-- //temporary template for chacking routing -->
+
+<h1 ng-controller="projectCtrl">{{project.projectName}}</h1>
+
+<!-- here  comes the carousel-->
+<div class="container slider" ng-controller="carouselCtrl">
+  <img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentIndex($index)" ng-src="{{slide.projectImg}}" ng-alt="{{slide.projectImgAlt}}">
+
+  <a class="arrow prev" href="#/projects/{{project.projectName}}" ng-click="prevSlide()"></a>
+  <a class="arrow next" href="#/projects/{{project.projectName}}" ng-click="nextSlide()"></a>
+
+  <nav class="nav slideNav">
+    <div class="wrapper">
+      <ul class="dots">
+        <li class="dot" ng-repeat="slide in slides">
+          <a href="#" ng-class="{'active': isCurrentIndex($index)}" ng-click="setCurrentIndex($index);">{{slide.desc}}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js">tween max</script>

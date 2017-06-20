@@ -1,0 +1,17 @@
+<div ng-controller="projectCtrl" class="container-fluid">
+  <h1>Our Projects</h1>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div ng-repeat="project in projects" class="projectsdiv col-sm-12 col-md-4 col-lg-4">
+        <a href="#/projects/{{project.projectName}}">
+          <img class="thumbnail-img" ng-src="{{project.projectImages[0].projectImg}}" ng-alt="{{project.projectImages[0].projectImgAlt}}">
+          <h3>{{project.projectName}}</h3>
+        </a>
+      </div><!-- projects-div -->
+    </div><!-- row -->
+  </div><!-- container-fluid -->
+
+
+
+</div>

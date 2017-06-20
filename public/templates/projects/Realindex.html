@@ -1,0 +1,32 @@
+<!-- this template contain the main view of the project page. it ocntain the following parts:
+        1. project name
+        2. project images carousel
+        3. project description
+-->
+<div class="container slider" ng-controller="carouselCtrl">
+
+  <h1>{{project.projectName}}</h1>
+
+  <!--this div contain the project images carousel. -->
+  <div class="col-md-8 col-sm-12">
+    <img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentIndex($index)" ng-src="{{slide.image}}" ng-alt="{{slide.desc}}">
+
+    <a class="arrow prev" href="#" ng-click="prevSlide()"></a>
+    <a class="arrow next" href="#" ng-click="nextSlide()"></a>
+
+    <nav class="nav">
+      <div class="wrapper">
+        <ul class="dots">
+          <li class="dot" ng-repeat="slide in slides">
+            <a href="#" ng-class="{'active': isCurrentIndex($index)}" ng-click="setCurrentIndex($index);">{{slide.desc}}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--this div contain the project description carousel. -->
+  <div class="col-md-4 col-sm-12">
+    <p>{{project.projectDesc}}</p>
+  </div>
+</div>

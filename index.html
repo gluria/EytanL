@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="website">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Eytan Luria Architect</title>
+
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="public/css/styles.css"> -->
+
+    <!--avoid favicon err -->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <!-- <script data-require="angular.js@1.1.x" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js" data-semver="1.1.5"></script> -->
+    <script src="https://code.angularjs.org/1.2.5/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="https://code.angularjs.org/1.2.5/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js">tween max</script>
+    <script src="public/javascripts/app.js"></script>
+    <script src="public/javascripts/routes.js"></script>
+    <script src="public/javascripts/controllers/dropdownCtrl.js"></script>
+    <script src="public/javascripts/controllers/projectCtrl.js"></script>
+    <script src="public/javascripts/controllers/carouselCtrl.js"></script>
+    <script src="public/javascripts/services/projectSrv.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Eytan Luria Architects</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed = true">
+
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/about">About Us</a></li>
+
+          <li class="dropdown" ng-controller="DropdownCtrl">
+            <a href="#" class="dropdown-toggle">Projects<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="proj in project"><a href="#/projects/{{proj.projectName}}">{{proj.projectName}}</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div ng-view></div>
+
+
+  </body>
+</html>
