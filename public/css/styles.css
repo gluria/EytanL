@@ -53,31 +53,31 @@
     height: 71px;
     outline: none;
     cursor: pointer;
-    background: url(../../public/img/blank.jpg) no-repeat;
+    background: url(../../public/img/carousel/blank.jpg) no-repeat;
 }
 
 .arrow.prev {
     opacity: 0.2;
     left: 20px;
-    background-image: url(../../public/img/paddle_prev_999.jpg);
+    background-image: url(../../public/img/carousel/paddle_prev_999.jpg);
     transition: 0.2s linear all;
 }
 
 .arrow.next {
     opacity: 0.2;
     right: 20px;
-    background-image: url(../../public/img/paddle_next_999.jpg);
+    background-image: url(../img/carousel/paddle_next_999.jpg);
     transition: 0.2s linear all;
 }
 
 .arrow.prev:hover {
     opacity: 1;
-    background-image: url(../../public/img/paddle_prev_fff.jpg);
+    background-image: url(../img/carousel/paddle_prev_fff.jpg);
 }
 
 .arrow.next:hover {
     opacity: 1;
-    background-image: url(../../public/img/paddle_next_fff.jpg);
+    background-image: url(../img/carousel/paddle_next_fff.jpg);
 }
 
 
