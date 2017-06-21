@@ -1,26 +1,33 @@
 angular.module('website')
   .factory('projectSrv', function(){
     var factory = {};
+
+    //getProjectInfo factory recieve a project name and return an project
+    //object from an array of projects
     factory.getProjectInfo = function(pName){
       return projects[getProjectIndex(pName)];
     },
+
+    //getProjects factory return the projects array
     factory.getProjects = function(){
       return projects;
+    },
+    //getProjectIndex factory recieve the project name and return the project index in the project array
+    factory.getProjectIndex = function(pName){
+      return getProjectIndex(pName);
     }
-    return factory;
-    //getProjectInfo function recieve a project name and return an project
-    //object from an array of projects
-
     //this helper function get a project name val and return the instance of the
     //project in the projects array.
     function getProjectIndex(pName){
       for (var i = 0; i < projects.length; i++) {
         if (projects[i].projectName === pName){
           return i;
-        }
-        //return -1
-      }
-    };
+        }// end of if condition
+      }// end of for loop
+    };//end of getProjectIndex function
+
+    return factory;
+
   });//end of projectSrv factory
 
 

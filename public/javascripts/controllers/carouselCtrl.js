@@ -1,10 +1,10 @@
 angular.module('website')
-  .controller('carouselCtrl', function($scope, $routeParams){
+  .controller('carouselCtrl', function($scope, $routeParams, projectSrv){
 
-    var i = getProjectIndex($routeParams.pName);
+    var i = projectSrv.getProjectIndex($routeParams.pName);
       console.log('carousel project images index: ' + i);
 
-    $scope.project = projects[i];
+    $scope.project = projectSrv.getProjects()[i];
       console.log('carousel project name: ' + $scope.project.projectName);
 
     $scope.slides = projects[i].projectImages;
@@ -31,106 +31,5 @@ angular.module('website')
       return false;
     };
 
-    function getProjectIndex(pName){
-      for (var i = 0; i < projects.length; i++) {
-        if (projects[i].projectName === $routeParams.pName){
-          return i;
-        }
-        //return -1
-      }
-    };
+
   });// end of carouselCtrl
-
-
-  var projects = [
-    {
-    projectName: 'resedential',
-    projectDescription: 'resedetial description',
-    projectImages: [
-      {
-        projectImg: 'public/residential.jpg',
-        projectImgAlt: 'resedential image'
-      },
-      {
-        projectImg: 'public/residential.jpg',
-        projectImgAlt: 'resedential image'
-      },
-      {
-        projectImg: 'public/residential.jpg',
-        projectImgAlt: 'resedential image'
-      },
-    ]
-    },
-    {
-      projectName: 'offices',
-      projectDescription: 'offices description',
-      projectImages: [
-        {
-          projectImg: 'public/offices.jpg',
-          projectImgAlt: 'officaes image'
-        },
-        {
-          projectImg: 'public/offices.jpg',
-          projectImgAlt: 'officaes image'
-        },
-        {
-          projectImg: 'public/offices.jpg',
-          projectImgAlt: 'officaes image'
-        }
-      ]
-    },
-    {
-      projectName: 'commercial',
-      projectDescription: 'commercial description',
-      projectImages: [
-        {
-          projectImg: 'public/commercial.jpg',
-          projectImgAlt: 'commercial image'
-        },
-        {
-          projectImg: 'public/commercial.jpg',
-          projectImgAlt: 'commercial image'
-        },
-        {
-          projectImg: 'public/commercial.jpg',
-          projectImgAlt: 'commercial image'
-        }
-      ]
-    },
-    {
-      projectName: 'tama 38',
-      projectDescription: 'tama 38 description',
-      projectImages: [
-        {
-          projectImg: 'public/tama.jpg',
-          projectImgAlt: 'tama 38 image'
-        },
-        {
-          projectImg: 'public/tama.jpg',
-          projectImgAlt: 'tama 38 image'
-        },
-        {
-          projectImg: 'public/tama.jpg',
-          projectImgAlt: 'tama 38 image'
-        }
-      ]
-    },
-    {
-      projectName: 'PREFAB',
-      projectDescription: 'PREFAB',
-      projectImages: [
-        {
-          projectImg: 'public/prefab.jpg',
-          projectImgAlt: 'prefab image'
-        },
-        {
-          projectImg: 'public/prefab.jpg',
-          projectImgAlt: 'prefab image'
-        },
-        {
-          projectImg: 'public/prefab.jpg',
-          projectImgAlt: 'prefab image'
-        }
-      ]
-    }
-  ];
