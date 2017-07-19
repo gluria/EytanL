@@ -1,6 +1,8 @@
+//this controller hande the view of the carousel, this is the image slide show.
 angular.module('website')
   .controller('carouselCtrl', function($scope, $routeParams, projectsSrv){
 
+    //var i holds the index of the selected project in the projects array.
     var i = projectsSrv.getProjectsIndex($routeParams.pName);
       console.log('carousel project images index: ' + i);
 
