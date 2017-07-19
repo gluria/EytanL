@@ -1,9 +1,9 @@
 angular.module('website')
-  .controller('projectCtrl', function($scope, $routeParams, $http, projectSrv){
+  .controller('projectCtrl', function($scope, $routeParams, projectsSrv){
 
-    $scope.projects = projectSrv.getProjects();
+    $scope.projects = projectsSrv.getProjects();
+    console.log($scope.projects);
 
-    $scope.project = projectSrv.getProjectInfo($routeParams.pName);
+    $scope.project = projectsSrv.getProjectInfo($routeParams.pName);
 
   });
-  

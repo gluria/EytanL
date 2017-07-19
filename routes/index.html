@@ -22,7 +22,9 @@
     <script src="public/javascripts/controllers/dropdownCtrl.js"></script>
     <script src="public/javascripts/controllers/projectCtrl.js"></script>
     <script src="public/javascripts/controllers/carouselCtrl.js"></script>
-    <script src="public/javascripts/services/projectSrv.js"></script>
+    <script src="public/javascripts/services/projectsSrv.js"></script>
+    <!-- <script src="public/javascripts/services/getProjectsProvider.js"></script> -->
+    <!-- <script src="public/javascripts/services/getProjectsConf.js"></script> -->
 
   </head>
 
@@ -50,7 +52,7 @@
           <li class="dropdown" ng-controller="DropdownCtrl">
             <a href="#" class="dropdown-toggle">Projects<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li ng-repeat="proj in project"><a href="#/projects/{{proj.projectName}}">{{proj.projectName}}</a></li>
+              <li ng-repeat="proj in projects"><a href="#/projects/{{proj.projectName}}">{{proj.projectName}}</a></li>
             </ul>
           </li>
 

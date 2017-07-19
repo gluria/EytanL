@@ -1,13 +1,15 @@
 angular.module('website')
-  .controller('carouselCtrl', function($scope, $routeParams, projectSrv){
+  .controller('carouselCtrl', function($scope, $routeParams, projectsSrv){
 
-    var i = projectSrv.getProjectIndex($routeParams.pName);
+    var i = projectsSrv.getProjectsIndex($routeParams.pName);
       console.log('carousel project images index: ' + i);
 
-    $scope.project = projectSrv.getProjects()[i];
-      console.log('carousel project name: ' + $scope.project.projectName);
+    $scope.project = projectsSrv.getProjectInfo($routeParams.pName);
 
-    $scope.slides = projects[i].projectImages;
+    $scope.projects = projectsSrv.getProjects()[i];
+      console.log('carousel project name: ' + $scope.project);
+
+    $scope.slides = projectsSrv.getProjects()[i].projectImages;
 
     $scope.currentIndex = 0;
 

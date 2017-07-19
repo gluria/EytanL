@@ -1,7 +1,7 @@
 /*his controller control the project dropdown list at the navbar.
 the controller load the project list from the projecs.json file.*/
 angular.module('website')
-  .controller('DropdownCtrl', function($scope, projectSrv){
+  .controller('DropdownCtrl', function($scope, projectsSrv){
 
-    $scope.project = projectSrv.getProjects();
+    $scope.projects = projectsSrv.getProjects();
 });
