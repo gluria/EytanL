@@ -5,15 +5,59 @@
   "projectDescription": "resedetial description",
   "projectImages": [
       {
-        "projectImg": "public/residential.jpg",
+        "projectImg": "public/images/resedential/mili/r1.jpg",
         "projectImgAlt": "resedential image"
       },
       {
-        "projectImg": "public/residential.jpg",
+        "projectImg": "public/images/resedential/mili/r2.jpg",
         "projectImgAlt": "resedential image"
       },
       {
-        "projectImg": "public/residential.jpg",
+        "projectImg": "public/images/resedential/mili/r3.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r4.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r5.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r6.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r7.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r8.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r9.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r10.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r11.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r12.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r13.jpg",
+        "projectImgAlt": "resedential image"
+      },
+      {
+        "projectImg": "public/images/resedential/mili/r14.jpg",
         "projectImgAlt": "resedential image"
       }
     ]
@@ -23,15 +67,11 @@
     "projectDescription": "offices description",
     "projectImages": [
       {
-        "projectImg": "public/offices.jpg",
+        "projectImg": "public/images/offices/shtila1.jpg",
         "projectImgAlt": "officaes image"
       },
       {
-        "projectImg": "public/offices.jpg",
-        "projectImgAlt": "officaes image"
-      },
-      {
-        "projectImg": "public/offices.jpg",
+        "projectImg": "public/images/offices/shtila2.jpg",
         "projectImgAlt": "officaes image"
       }
     ]
@@ -41,15 +81,7 @@
     "projectDescription": "commercial description",
     "projectImages": [
       {
-        "projectImg": "public/commercial.jpg",
-        "projectImgAlt": "commercial image"
-      },
-      {
-        "projectImg": "public/commercial.jpg",
-        "projectImgAlt": "commercial image"
-      },
-      {
-        "projectImg": "public/commercial.jpg",
+        "projectImg": "public/images/commercial/commercial.jpg",
         "projectImgAlt": "commercial image"
       }
     ]
@@ -59,15 +91,35 @@
     "projectDescription": "tama 38 description",
     "projectImages": [
       {
-        "projectImg": "public/tama.jpg",
+        "projectImg": "public/images/tama38/1_yrdn.jpg",
         "projectImgAlt": "tama 38 image"
       },
       {
-        "projectImg": "public/tama.jpg",
+        "projectImg": "public/images/tama38/3_hroe.jpg",
         "projectImgAlt": "tama 38 image"
       },
       {
-        "projectImg": "public/tama.jpg",
+        "projectImg": "public/images/tama38/5_kv78.jpg",
+        "projectImgAlt": "tama 38 image"
+      },
+      {
+        "projectImg": "public/images/tama38/9_brands.jpg",
+        "projectImgAlt": "tama 38 image"
+      },
+      {
+        "projectImg": "public/images/tama38/2016-09-14_1246.png",
+        "projectImgAlt": "tama 38 image"
+      },
+      {
+        "projectImg": "public/images/tama38/3134_01.jpg",
+        "projectImgAlt": "tama 38 image"
+      },
+      {
+        "projectImg": "public/images/tama38/slm_01.2.jpg",
+        "projectImgAlt": "tama 38 image"
+      },
+      {
+        "projectImg": "public/images/tama38/v2_lila_pp.jpg",
         "projectImgAlt": "tama 38 image"
       }
     ]
@@ -77,16 +129,54 @@
     "projectDescription": "PREFAB description",
     "projectImages": [
       {
-        "projectImg": "public/prefab.jpg",
+        "projectImg": "public/images/prefab/mr_section.jpg",
         "projectImgAlt": "prefab image"
       },
       {
-        "projectImg": "public/prefab.jpg",
+        "projectImg": "public/images/prefab/mr1.jpg",
         "projectImgAlt": "prefab image"
       },
       {
-        "projectImg": "public/prefab.jpg",
+        "projectImg": "public/images/prefab/mr2.jpg",
         "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr3.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr4.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr5.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr6.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr7.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr8.jpg",
+        "projectImgAlt": "prefab image"
+      },
+      {
+        "projectImg": "public/images/prefab/mr9.jpg",
+        "projectImgAlt": "prefab image"
+      }
+    ]
+  },
+  {
+    "projectName": "Conservation",
+    "projectDescription": "Conservation description",
+    "projectImages": [
+      {
+        "projectImg": "public/images/Conservation/11_shnkn.jpg",
+        "projectImgAlt": "Conservation image"
       }
     ]
   }
