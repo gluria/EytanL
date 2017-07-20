@@ -1,0 +1,33 @@
+<div class="" ng-controller="contactCtrl as contact">
+  <h1>Contact Us</h1>
+
+  <br>
+  <h4>Leave us a message and we'll be back.</h4>
+  <br>
+
+  <input type="text" ng-model="contact.firstName" placeholder="first name">
+  <input type="text" ng-model="contact.lastName" placeholder="last name">
+  <br>
+  <br>
+  <input type="tel" ng-model="contact.phone" placeholder="phone number">
+  <br>
+  <br>
+  <input type="email" ng-model="contact.email" placeholder="email address">
+  <br>
+  <br>
+  <textarea name="comment" ng-model="contact.message" placeholder="Enter your message here..." rows="8" cols="80"></textarea>
+  <br>
+  <br>
+  <button type="button" name="button">Send Message</button>
+
+  <br>
+  <br>
+
+  <div class="">
+    <p>name: {{contact.firstName}} {{contact.lastName}}</p>
+    <p>phone number: {{contact.phone}}</p>
+    <p>email: {{contact.email}}</p>
+    <p>message</p>
+    <p>{{contact.message}}</p>
+  </div>
+</div>
